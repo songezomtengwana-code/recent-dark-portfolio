@@ -1,0 +1,92 @@
+.section {
+  background: var(--white);
+  height: 100vh;
+  font-family: "Nunito", Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding: 2em 200px;
+}
+
+.headPair {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.headPair > h1 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0;
+}
+
+.headPair > p {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* POSTCARD.JS CSS CODE */
+
+.container {
+  display: flex;
+  flex-flow: row;
+  margin: 70px;
+}
+
+.text {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.title > h1 {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+}
+
+.title > p {
+  color: var(--grey);
+  font-size: 10px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.btn {
+  padding: 6px 22px;
+  background: var(--purple);
+  color: var(--white);
+  margin: 20px 0;
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  width: max-content;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:focus {
+ box-shadow: 0px 0px 2px 2px var(--light);
+}
+
+.ill {
+  width: 50%;
+}
+
+/* POSTCARD.JS CSS CODE */
+
+@media (max-width: 800px) {
+  .section {
+    padding: 1.5em;
+    margin: 80px 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+}

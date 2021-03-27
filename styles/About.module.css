@@ -1,0 +1,44 @@
+.section {
+  background: var(--white);
+  height: 100vh;
+  font-family: "Nunito", Arial;
+  font-style: normal;
+  font-weight: normal;
+  padding: 200px;
+}
+
+.headPair {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.headPair > h1 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0;
+}
+
+.headPair > p {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.text {
+  width: 550px;
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 8em 20px;
+  }
+
+  .headPair > h1 {
+    font-size: 28px;
+  }
+
+  .text {
+    width: unset;
+  }
+}

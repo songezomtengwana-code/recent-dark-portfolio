@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0.7em 7em;
+  background-color: transparent;
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.ham {
+  display: none;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--purple);
+  transform: rotate(45deg);
+  left: 7em;
+  top: 1.4em;
+}
+
+.icon::after {
+  content: "songezo mtengwana";
+  position: absolute;
+  top: 1.5em;
+  left: 7.8em;
+  font-weight: bold;
+  color: var(--light);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 61px;
+  padding-right: 0;
+  width: 329px;
+  font-size: 14px;
+  height: 49px;
+}
+
+.link:active {
+  color: var(--purple);
+}
+
+.links > a:hover {
+  color: var(--white2);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  background: var(--dark1);
+  color: var(--white1);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--dark2);
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+.text {
+  width: 550px;
+}
+
+@media (max-width: 601px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav {
+    display: inline-flex;
+  }
+}

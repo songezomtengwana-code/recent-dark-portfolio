@@ -1,0 +1,88 @@
+.landing {
+  height: 90vh;
+  color: var(--light);
+  background: var(--dark2);
+  background-image: url("/landing.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 0;
+  display: flex;
+}
+.ad {
+  width: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.ad > div > h1 {
+  font-size: 50px;
+  width: 350px;
+  margin: 0;
+}
+
+
+
+.cta {
+  display: none;
+}
+
+.ad > div > h1 > span {
+  color: var(--purple);
+}
+
+@media (max-width: 800px) {
+
+  .landing {
+    height: 97vh;
+    padding: 4em;
+    display: none;
+  }
+
+  .ad {
+    width: unset;
+  }
+
+  .ad > div > h1 {
+    font-size: 40px;
+    width: 80%;
+  }
+
+  .ad > div > h1::before {
+    content: '';
+    width: 300px;
+    height: 205px;
+    background-color: var(--dark2);
+    position: absolute;
+    transform-origin: bottom;
+    animation: drop 1s ease-in forwards;
+    transform: scale(1);
+  }
+
+  @keyframes drop {
+    to {
+      transfrom: scale(0);
+      width: 0%;
+    }
+  }
+
+  .cta {
+    display: block;
+    color: var(--purple);
+    position: relative;
+    background: var(--white);
+    height: 50px;
+    width: 120px;
+    border: 1px solid transparent;
+    top: 600px;
+    left: -43%;
+    outline: none;
+    border-radius: 50%;
+  }
+
+  .cta > i {
+    font-size: 27px;
+    line-height: 0;
+  }
+
+}
